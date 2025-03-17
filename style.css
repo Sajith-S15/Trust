@@ -129,8 +129,10 @@ h1 {
     color:#1a121d;
 }
 
-.highlight {
-    color: #000; 
+.highlights {
+    color: #92A7B0; 
+    font-size:60px;
+    font-weight: 700;
 }
 
 .trustco {
@@ -219,6 +221,9 @@ button {
         align-items: center;
         text-align: center;
         position: static;
+    }
+    .highlights{
+        font-size: 36px;
     }
     h1{
         font-size:30px;
@@ -490,6 +495,24 @@ button {
     }
 }
 
+.stats{
+    display:flex;
+    justify-content:center;
+    gap: 150px;
+}
+
+.stat-item{
+    color: #043A53;
+    font-size:60px;
+    font-weight:700;
+}
+
+.stat-item p{
+    font-size: 24px;
+    font-weight: 700;
+    color: #404040;
+    opacity: 1;
+}
 
 /* Beneficial Section */
 #beneficial {
@@ -568,6 +591,7 @@ button {
 }
 
 
+
 /* Responsive - Mobile View */
 @media (max-width: 768px) {
     .beneficial-container {
@@ -575,7 +599,20 @@ button {
         align-items: center;
         text-align: center;
     }
-
+    .stats{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+    .stat-item{
+        font-size: 36px;
+    }
+    .stat-item p{
+        font-size: 16px;
+        font-weight: 500;
+        color: #404040;
+        opacity: 1;
+    }
     .beneficial-cards {
         flex-direction: column;
         width: 100%;
@@ -585,4 +622,130 @@ button {
         width: 332px;
     }
 }
+
+.founder-section, .bridges-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 80px;
+}
+
+.founder-content h2{
+    font-size: 60px;
+}
+.founder-content p{
+    text-align: justify;
+}
+.author-text{
+    font-size: 20px;
+    color:#12141D;
+    margin-top:10px;
+    font-weight: 700;
+    opacity:1;
+}
+.text-small{
+    font-size: 16px;
+    font-weight: 400;
+    color: #404040;
+}
+.founder-content {
+    max-width: 50%;
+    margin-left: 120px;
+    text-align: justify;
+}
+.bridges-content{
+    text-align: justify;
+}
+.bridges-content h2{
+    font-size: 60px;
+    color: #12141D;
+}
+.founder-image, .bridges-image {
+    position: relative;
+}
+
+.founder-image img {
+    
+    border-radius: 10px;
+}
+.founder{
+    width:626px;
+    height: 524px;
+}
+.small-profile {
+    position: absolute;
+    bottom: 0px;
+    left: -20px;
+    border-radius: 50%;
+    width: 202px;
+    height: 202px;
+    
+}
+
+.notification-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #003366;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.bridges-image img {
+    width: 629px;
+    height: 700px;
+    border-radius: 10px;
+}
+
+.award-badge {
+    position: relative;
+    width: 229px;
+    height: 229px;
+    background: #043A53;
+    right: 330px;
+    top: 0;
+    color: white;
+    padding: 10px;
+    border-radius: 1000px;
+    display: inline-block;
+    margin-top: 10px;
+}
+.award-badge img{
+    margin-left: 75px;
+}
+.one{
+    font-size: 48px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+.best{
+    display:flex;
+    justify-content:center;
+    text-align: center;
+    margin-top: -30px;
+}
+.btn-primary, .btn-secondary {
+    background: #043A53;
+    color: white;
+    padding: 16px 16px 16px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 55px;
+    margin-top: 20px;
+}
+
+.btn-secondary {
+    background: #043A53;
+    position:relative;
+    bottom: 60px;
+    right: 220px;
+
+}
+
+/* Mobile View */
+
 
