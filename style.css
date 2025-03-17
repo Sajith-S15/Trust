@@ -747,5 +747,79 @@ button {
 }
 
 /* Mobile View */
+@media (max-width: 768px) {
+    .founder-section, .bridges-section {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
 
+    .founder-content, .bridges-content {
+        max-width: 100%;
+    }
+
+    .founder-image img, .bridges-image img {
+        max-width: 100%;
+    }
+    .founder-content{
+        margin-left: 0;
+    }
+    .founder-content h2{
+        text-align: center;
+        font-size: 30px;
+    }
+    .founder-content p{
+        text-align: center;
+        font-size: 16px;
+        padding: 10px;
+    }
+    .bridges-image{
+        margin-right:auto;
+    }
+    .bridges-image img{
+        width: 321px;
+        height: 368px;
+        border-radius: 10px;
+    }
+    .award-badge{
+        position:relative;
+        top:538px;
+        left: 45%;
+        width: 149px;
+        height: 149px;
+    }
+    .award-badge img{
+        width: 32px;
+        height: 32px;
+        margin-left: 45px;
+        
+    }
+    .bridges-content h2{
+        font-size: 36px;
+        text-align: center;
+    }
+    .bridges-content p{
+        font-size: 14px;
+        text-align: center;
+    }
+    .btn-primary{
+        margin-left: 15%;
+    }
+    .btn-secondary{
+        position: relative;
+        right: 55px;
+    }
+    .one{
+        font-size: 36px;
+    }
+    .best{
+        display: flex;
+        justify-content: center;
+        font-size: 14px;
+        position: absolute;
+        top: 130px;
+        left: 44px;
+        text-align: center;
+    }
+    
+}
 
