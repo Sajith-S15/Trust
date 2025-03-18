@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page Title</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -170,7 +171,63 @@
         </div>
     </section>
     
+    <section class="testimonial-section">
+        <div class="testimonial-header">
+            <h2>We Believe people we trust</h2>
+            <a href="#" class="see-all">See All →</a>
+        </div>
     
+        <!-- Swiper Container -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <span class="quote">“</span>
+                        <p>I'm totally unconvinced that two people can find a person they haven’t known previously, and become an effective co-founder.</p>
+                        <div class="testimonial-footer">
+                            <img src="./assets/Photo1.png" alt="Andrew Wilkins">
+                            <div class="author-info">
+                                <strong>Andrew Wilkins</strong>
+                                <p>Managing Director, Yess Company</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <span class="quote">“</span>
+                        <p>Easy to use, reasonably priced, and ensures I don’t drop the ball on following up with my leads!</p>
+                        <div class="testimonial-footer" id="testimonial-footer-p">
+                            <img src="./assets/Photo2.png" alt="Daisy Phelps">
+                            <div class="author-info">
+                                <strong>Daisy Phelps</strong>
+                                <p>Digital Marketing Director, Monatz</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
 
     
     <!-- Footer Section -->
