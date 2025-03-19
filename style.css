@@ -820,6 +820,14 @@ button {
         left: 44px;
         text-align: center;
     }
+    .quote {
+        font-size: 40px;
+        color: #ff9f00;
+        font-weight: bold;
+        position: absolute;
+        left: 0px;
+        top: 10px;
+    }
     
 }
 
@@ -907,4 +915,29 @@ button {
 
 .swiper-pagination {
     margin-top: 20px;
+}
+
+@media(max-width: 768px){
+    .quote{
+        position: absolute;
+        left:0px;
+        top: 10px;
+    }
+    .testimonial-card p{
+        font-size: 16px;
+        text-align: left;
+    }
+    .testimonial-header h2 {
+        font-size: 30px;
+        margin-top: 30px;
+        
+    }
+    .testimonial-header{
+        display: block;
+    }
+    .see-all{
+        position: relative;
+        top: 330px;
+        z-index: 500;
+    }
 }

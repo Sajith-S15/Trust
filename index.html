@@ -219,14 +219,26 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 2,
+       var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 2, // Show 2 slides on desktop
+    spaceBetween: 20, 
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    grabCursor: true,  // Makes it feel interactive
+    breakpoints: {
+        0: {
+            slidesPerView: 1, // Show 1 slide on mobile
+            spaceBetween: 10,
+        },
+        768: {
+            slidesPerView: 2, // Show 2 slides on tablets
             spaceBetween: 20,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
+        }
+    }
+});
+
     </script>
 
     
