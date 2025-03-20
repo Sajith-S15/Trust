@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page Title</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -96,17 +97,187 @@
             </div>
         </div>
     </section>
+    <section id="beneficial">
+        <div class="beneficial-container">
+            <!-- Left Section -->
+            <div class="beneficial-text">
+                <span class="badge">Beneficial</span>
+                <h2>Beneficial <br> Elements</h2>
+                <p>An awesome & powerful <br>tools for your business, 
+                <br> increase business revenue</p>
+            </div>
     
+            <!-- Right Section (Cards) -->
+            <div class="beneficial-cards">
+                <!-- Card 1 -->
+                <div class="card">
+                    <img src="./assets/Illust 1.png" alt="Happy Customers">
+                    <h3>Happy Customers</h3>
+                    <p>Productive agents are happy agents. Give them all the support tools and information they need to best serve your customers.</p>
+                </div>
     
-    <!-- Main Content Section -->
-    <main>
-        <h2>About Us</h2>
-        <p>This is a placeholder for the main content.</p>
-    </main>
+                <!-- Card 2 -->
+                <div class="card">
+                    <img src="./assets/Illust 2.png" alt="Best Integrations">
+                    <h3>Best Integrations</h3>
+                    <p>Our software is powerful enough to handle the most complex business, yet flexible enough to scale with you as you grow.</p>
+                </div>
+    
+                <!-- Card 3 -->
+                <div class="card">
+                    <img src="./assets/Illust 3.png" alt="Grow Without Problems">
+                    <h3>Grow Without Problems</h3>
+                    <p>With evaluating in-depth variety of data sets and including the speed of tech adaptation we can build bridges between any companies and their customers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="stats">
+        <div class="stat-item"><strong>$65 M</strong><p>Generate sales</p></div>
+        <div class="stat-item"><strong>58%</strong><p>Grew revenue</p></div>
+        <div class="stat-item"><strong>12</strong><p>Countries</p></div>
+        <div class="stat-item"><strong>16k+</strong><p>Grew customers</p></div>
+    </div>
+    <section class="founder-section">
+        <div class="founder-content">
+            
+            <h2>Meet Our Founder</h2>
+            <p>“I think you're better off finding the money to hire someone than actually find a co-founder. The main reason? You probably won't find someone as passionate as you are about the organization you're building. And keep in mind, I have no clue who you are or what you're building so that's no judgment on you or the idea, just the reality I've observed over 20 years of startups.”</p>
+            <p class="author-text"><strong>Jason Hound</strong><br><span class="text-small">Founder of Trustco.</span></p> <br>
+            <button class="btn-primary">See Team Behind Our Success →</button>
+        </div>
+        <div class="founder-image">
+            <img class="founder" src="./assets/Man2.png" alt="Founder">
+            <div class="small-profile">
+                <img src="./assets/Circle-Image.png" alt="Team Member">
+            </div>
+           
+        </div>
+    </section>
+    
+    <section class="bridges-section">
+        <div class="bridges-image">
+            <img src="./assets/BusinessMan.png" alt="Businessmen">
+        </div>
+        <div class="bridges-content">
+            <h2>Building bridges <br> between <span class="highlights">companies <br> and customers</span></h2>
+            <p>With evaluating in-depth variety of data sets and including <br> the speed of tech adaptation we can build bridges 
+            <br> between any companies and their customers.</p>
+            <div class="award-badge">
+                <img src="./assets/Icon.png" alt="">
+            <span class="one">#1</span><br> 
+            <span class="best">Best Award <br> 2023 </span></div>
+            <button class="btn-secondary">View Reports →</button>
+        </div>
+    </section>
+    
+    <section class="testimonial-section">
+        <div class="testimonial-header">
+            <h2>We Believe people we trust</h2>
+            <a href="#" class="see-all">See All →</a>
+        </div>
+    
+        <!-- Swiper Container -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <span class="quote">“</span>
+                        <p>I'm totally unconvinced that two people can find a person they haven’t known previously, and become an effective co-founder.</p>
+                        <div class="testimonial-footer">
+                            <img src="./assets/Photo1.png" alt="Andrew Wilkins">
+                            <div class="author-info">
+                                <strong>Andrew Wilkins</strong>
+                                <p>Managing Director, Yess Company</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <span class="quote">“</span>
+                        <p>Easy to use, reasonably priced, and ensures I don’t drop the ball on following up with my leads!</p>
+                        <div class="testimonial-footer" id="testimonial-footer-p">
+                            <img src="./assets/Photo2.png" alt="Daisy Phelps">
+                            <div class="author-info">
+                                <strong>Daisy Phelps</strong>
+                                <p>Digital Marketing Director, Monatz</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    
+    <section class="news-section">
+        <div class="news-header">
+            <h2>Whats new on <span class="highlight">Trustco.</span>?</h2>
+            <a href="#" class="see-all">See All →</a>
+        </div>
+        
+        <div class="news-carousel">
+            <div class="news-card">
+                <img src="./assets/blog-1.png" alt="News 1">
+                <p class="date">23 Nov 2022, by Amanda Hugh</p>
+                <h3>What Makes an Authentic Employee Profile?</h3>
+                <p>I'm totally unconvinced that two people can find a person they haven't known previously...</p>
+                <a href="#" class="read-more">Read Story →</a>
+            </div>
+            
+            <div class="news-card">
+                <img src="./assets/blog-2.png" alt="News 2">
+                <p class="date">15 Nov 2022, by Sofia Kent</p>
+                <h3>Why Does It Matter to be Authentic Employee?</h3>
+                <p>I'm totally unconvinced that two people can find a person they haven't known previously...</p>
+                <a href="#" class="read-more">Read Story →</a>
+            </div>
+            
+            <div class="news-card">
+                <img src="./assets/blog-3.png" alt="News 3">
+                <p class="date">23 Sep 2022, by Jason Borne</p>
+                <h3>What Makes an Authentic Employee Profile?</h3>
+                <p>I'm totally unconvinced that two people can find a person they haven't known previously...</p>
+                <a href="#" class="read-more">Read Story →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+       var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 2, // Show 2 slides on desktop
+    spaceBetween: 20, 
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    grabCursor: true,  // Makes it feel interactive
+    breakpoints: {
+        0: {
+            slidesPerView: 1, // Show 1 slide on mobile
+            spaceBetween: 10,
+        },
+        768: {
+            slidesPerView: 2, // Show 2 slides on tablets
+            spaceBetween: 20,
+        }
+    }
+});
+
+    </script>
+
     
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2025 Your Company. All Rights Reserved.</p>
+        <p>&copy; 2023 Trust Company. All Rights Reserved.</p>
     </footer>
     <script>
         function toggleMenu() {
