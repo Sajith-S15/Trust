@@ -983,3 +983,27 @@ button {
     text-decoration: none;
     margin-right: 150px;
 }
+
+@media (max-width: 768px) {
+    .news-carousel {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 10px;
+    }
+    .news-card {
+        flex: 0 0 80%;
+        scroll-snap-align: start;
+    }
+    .news-header{
+        display: block;
+    }
+    .news-header h2{
+        font-size: 30px;
+    }
+    .see-alls{
+        position: relative;
+        top: 560px;
+        text-decoration:none;
+    }
+}
